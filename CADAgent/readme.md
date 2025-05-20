@@ -13,5 +13,9 @@ Approach
 Key Features
 - Prompt-to-Model Generation: Convert user prompts into CadQuery-based Python code for 3D model creation.
 - Code Display and Execution: View and run the generated CadQuery code in a Jupyter or Kaggle notebook.
-- Interactive Model Rendering: Use jupyter-cadquery to render the output as an interactable 3D model.
+- Interactive Model Rendering: Use Jupyter-CadQuery to render the output as an interactable 3D model.
 - Parametric Design Templates: Generate modular and reusable designs tailored to mechanical parts.
+
+#TO-DO
+- Enable Gradio integration
+- Enable LLM evaluation incase of incorrect generation
