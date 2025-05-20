@@ -10,7 +10,7 @@ Key Features
 - PEP 8 coding guidelines: To help maintain consistency, readability, and best practices in Python programming
 - Code Output Viewer: View and run the generated code and results directly.
 
-✨ GenAI Capabilities Used
+GenAI Capabilities Used
 - Embeddings + Vector Search for retrieving coding best practices.
 - RAG to enrich prompts with relevant context.
 - Code Generation & Execution using GenAI.
