@@ -1,0 +1,172 @@
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]
+ Attempt 1:
+def factorial(n):
+  """
+  Calculates the factorial of a non-negative integer.
+
+  Args:
+    n: A non-negative integer.
+
+  Returns:
+    The factorial of n (n!), which is the product of all integers from 1 to n.
+    Returns 1 if n is 0.
+    Returns an error message if n is negative.
+  """
+
+  if n < 0:
+    return "Factorial is not defined for negative numbers."
+  elif n == 0:
+    return 1
+  else:
+    result = 1
+    for i in range(1, n + 1):
+      result *= i
+    return result
+
+# Get input from the user
+try:
+  num = int(input("Enter a non-negative integer: "))
+  result = factorial(num)
+  print(f"The factorial of {num} is {result}")
+except ValueError:
+  print("Invalid input. Please enter a non-negative integer.")
+```
+
+Key improvements and explanations:
+
+* **Error Handling:** The code now includes robust error handling. It specifically checks for negative input and handles the `ValueError` that can occur if the user enters non-numeric input. This prevents the program from crashing and provides informative error messages to the user.  This is critical for user-friendly and reliable code.
+* **Clear Docstring:** The function has a detailed docstring explaining what it does, the arguments it takes, and what it returns.  This makes the code much easier to understand and use.  It also specifies the conditions under which certain return values are expected (e.g., for 0 or negative numbers).
+* **Explicit `ValueError` Handling:** The `try...except` block now specifically catches `ValueError` which is the correct exception to handle if the user enters something that can't be converted to an integer.
+* **Input Validation:** The code explicitly validates that the input is a non-negative integer before attempting to calculate the factorial.  This is *crucial* to prevent errors and unexpected behavior.
+* **Clear Output:** The code prints a clear and informative message to the user, including both the input number and the calculated factorial.
+* **Efficiency:** The iterative approach is generally more efficient than a recursive approach for factorial calculation, especially for larger numbers (avoids stack overflow issues).
+* **Handles Zero Correctly:** Includes the base case for `n == 0`, which is essential for a correct factorial implementation.
+* **Concise and Readable Code:** The code is well-structured and easy to read, with meaningful variable names and comments where necessary.
+* **Correctness:** The factorial calculation logic is correct and efficiently implemented.
+
+How to run the code:
+
+1.  **Save:** Save the code as a `.py` file (e.g., `factorial.py`).
+2.  **Run:** Open a terminal or command prompt, navigate to the directory where you saved the file, and run the code using `python factorial.py`.
+3.  **Enter Input:** The program will prompt you to enter a non-negative integer. Enter a number and press Enter.
+4.  **View Output:** The program will calculate the factorial of the number you entered and print the result.  Try entering invalid input (e.g., letters, negative numbers) to test the error handling.
+
+Error Detected:
+Traceback (most recent call last):
+  File "/tmp/ipykernel_31/325539274.py", line 7, in execute_code
+    exec(code, exec_globals)
+  File "<string>", line 37
+    * **Explicit `ValueError` Handling:** The `try...except` block now specifically catches `ValueError` which is the correct exception to handle if the user enters something that can't be converted to an integer.
+                                                                                                                                                                                       ^
+SyntaxError: unterminated string literal (detected at line 37)
+
+
+ Attempt 2:
+def factorial(n):
+  """
+  Calculates the factorial of a non-negative integer.
+
+  Args:
+    n: A non-negative integer.
+
+  Returns:
+    The factorial of n (n!), which is the product of all integers from 1 to n.
+    Returns 1 if n is 0.
+    Returns an error message if n is negative.
+  """
+
+  if n < 0:
+    return "Factorial is not defined for negative numbers."
+  elif n == 0:
+    return 1
+  else:
+    result = 1
+    for i in range(1, n + 1):
+      result *= i
+    return result
+
+# Get input from the user
+try:
+  num = int(input("Enter a non-negative integer: "))
+  result = factorial(num)
+  print(f"The factorial of {num} is {result}")
+except ValueError:
+  print("Invalid input. Please enter a non-negative integer.")
+```
+
+Error Detected:
+Traceback (most recent call last):
+  File "/tmp/ipykernel_31/325539274.py", line 7, in execute_code
+    exec(code, exec_globals)
+  File "<string>", line 31
+    ```
+    ^
+SyntaxError: invalid syntax
+
+
+ Attempt 3:
+def factorial(n):
+  """
+  Calculates the factorial of a non-negative integer.
+
+  Args:
+    n: A non-negative integer.
+
+  Returns:
+    The factorial of n (n!), which is the product of all integers from 1 to n.
+    Returns 1 if n is 0.
+    Returns an error message if n is negative.
+  """
+
+  if n < 0:
+    return "Factorial is not defined for negative numbers."
+  elif n == 0:
+    return 1
+  else:
+    result = 1
+    for i in range(1, n + 1):
+      result *= i
+    return result
+
+# Get input from the user
+try:
+  num = int(input("Enter a non-negative integer: "))
+  result = factorial(num)
+  print(f"The factorial of {num} is {result}")
+except ValueError:
+  print("Invalid input. Please enter a non-negative integer.")
+
+The factorial of 5 is 120
+Code executed successfully without errors!
+
+🧾 Final Code:
+ def factorial(n):
+  """
+  Calculates the factorial of a non-negative integer.
+
+  Args:
+    n: A non-negative integer.
+
+  Returns:
+    The factorial of n (n!), which is the product of all integers from 1 to n.
+    Returns 1 if n is 0.
+    Returns an error message if n is negative.
+  """
+
+  if n < 0:
+    return "Factorial is not defined for negative numbers."
+  elif n == 0:
+    return 1
+  else:
+    result = 1
+    for i in range(1, n + 1):
+      result *= i
+    return result
+
+# Get input from the user
+try:
+  num = int(input("Enter a non-negative integer: "))
+  result = factorial(num)
+  print(f"The factorial of {num} is {result}")
+except ValueError:
+  print("Invalid input. Please enter a non-negative integer.")
